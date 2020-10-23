@@ -20,8 +20,7 @@ header {
     padding: 2%;
     margin: 0 auto;
     text-align: center;
-    grid-area: head;
-  
+    animation: fadein 1s;
 }
 body {
     height: 100%;
@@ -29,13 +28,12 @@ body {
     background-color: #D9D9D6;
     background-image: url(img/background-gradient.png);
     background-size: cover;
-    margin: 0;
-    padding: 0px;
+    background-attachment: fixed;
+    margin: 0 auto;
 }
 
 nav ul {
     list-style: none;
-    padding: 2px 4px;
     margin: 0 auto;   
     text-align: center;
 }
@@ -53,18 +51,16 @@ nav a {
 li:hover {
     text-decoration: underline;
 }
-.bio-text {
-    max-width: 500px;
-    max-height: 460px;
+p {
     text-align: center;
     color: white;
     font-family: Cocomat;
     font-size: 14px;
-    position: absolute;
+    line-height: 20px;
     overflow: scroll;
     margin: 0 auto;
-    left: 15%;
-    top: 27%;
+    padding: 5% 10%;
+    animation: fadein 4s;
 }
 .archive-text {
     max-width: 100%;
@@ -90,9 +86,10 @@ li:hover {
 }
 img {
     max-height: 480px;
-    position: absolute;
-    right: 20%;
-    top: 27%;
+    float: right;
+    margin: 15px;
+    animation: fadein 4s;
+    padding: 15px;
 }
 footer {
     height: 100px;
@@ -115,11 +112,11 @@ footer {
          animation: fadein 3s;
 }
 #fade3 {
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-     -ms-animation: fadein 2s; /* Internet Explorer */
-      -o-animation: fadein 2s; /* Opera < 12.1 */
-         animation: fadein 2s;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 4s; /* Firefox < 16 */
+     -ms-animation: fadein 4s; /* Internet Explorer */
+      -o-animation: fadein 4s; /* Opera < 12.1 */
+         animation: fadein 4s;
 }
 @keyframes fadein {
     from { opacity: 0; }
